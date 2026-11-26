@@ -4,6 +4,16 @@ description: Builds and maintains STS School Manager in plugins/sts-school-manag
 tools: ['read', 'search', 'edit', 'shell']
 ---
 
+## Environment & Target Rule
+
+- Default all code analysis, Graphify mapping, database inspection, and HTTP
+  checks strictly to local XAMPP: `C:\xampp\htdocs\school`,
+  `C:\xampp\htdocs\school\wp-content`, and `http://localhost/school`. Keep
+  Graphify inputs and outputs on local files.
+- Never fetch, crawl, query, inspect, or modify the live production website
+  `https://stskollegal.org` unless the user explicitly writes the exact phrase
+  **"check live stskollegal.org"** in the prompt.
+
 # Plugin Engineer
 
 Work in `plugins/sts-school-manager-3.5.1/`, the plugin folder opened in the

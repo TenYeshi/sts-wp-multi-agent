@@ -1,5 +1,15 @@
 # WordPress Development Guidance
 
+## Environment & Target Rule
+
+- Default all code analysis, Graphify mapping, database inspection, and HTTP
+  checks strictly to the local XAMPP site and files:
+  `C:\xampp\htdocs\school`, `C:\xampp\htdocs\school\wp-content`, and
+  `http://localhost/school`. Keep Graphify inputs and outputs on local files.
+- Never fetch, crawl, query, inspect, or modify the live production website
+  `https://stskollegal.org` unless the user explicitly writes the exact phrase
+  **"check live stskollegal.org"** in the prompt.
+
 This workspace is `C:\xampp\htdocs\school\wp-content`, for the local site at
 `http://localhost/school`. Use `C:\xampp\php\php.exe` for PHP commands.
 

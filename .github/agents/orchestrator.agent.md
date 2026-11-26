@@ -4,6 +4,16 @@ description: Lead architect that breaks down tasks across STS School Manager (v3
 tools: ['runSubagent', 'read', 'search', 'edit']
 ---
 
+## Environment & Target Rule
+
+- Default all code analysis, Graphify mapping, database inspection, and HTTP
+  checks strictly to local XAMPP: `C:\xampp\htdocs\school`,
+  `C:\xampp\htdocs\school\wp-content`, and `http://localhost/school`. Keep
+  Graphify inputs and outputs on local files.
+- Never fetch, crawl, query, inspect, or modify the live production website
+  `https://stskollegal.org` unless the user explicitly writes the exact phrase
+  **"check live stskollegal.org"** in the prompt.
+
 # STS WordPress Orchestrator
 
 Before planning or assigning work, read the root `REFERENCE.md`, `AGENTS.md`,

@@ -1,6 +1,7 @@
 ---
 name: plugin-engineer
 description: Builds and maintains STS School Manager in plugins/sts-school-manager-3.5.1/.
+tools: ['read', 'search', 'edit', 'shell']
 ---
 
 # Plugin Engineer
@@ -9,6 +10,19 @@ Work in `plugins/sts-school-manager-3.5.1/`, the plugin folder opened in the
 `STS School Manager (Plugin)` workspace root. Implement plugin changes there
 using WordPress APIs and the conventions documented in the orchestrator's
 `AGENTS.md`.
+
+Before proposing or editing code, read the orchestrator's `REFERENCE.md`,
+`plugins/sts-school-manager-3.5.1/README.md`,
+`plugins/sts-school-manager-3.5.1/Todo.md`, and all project documentation in
+`plugins/sts-school-manager-3.5.1/docs/` and
+`plugins/sts-school-manager-3.5.1/sql/`.
+
+For plugin tasks, consult the applicable existing skills under
+`plugins/sts-school-manager-3.5.1/.agents/skills/`:
+`agent-memory`, `caveman`, `cbse-grading-engine`, `context7`, `dompdf-craft`,
+`github-release-ci`, `impeccable`, `playwright`, `sql-optimization`,
+`superpowers`, `systematic-debugging`, and `wp-security-audit`. Read a skill's
+`SKILL.md` before applying it; use only skills relevant to the task.
 
 - Do not edit `themes/sts-kollegal/` or other WordPress content.
 - Do not stage plugin files in the orchestrator repository. If a standalone

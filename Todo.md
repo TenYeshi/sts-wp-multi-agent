@@ -19,10 +19,10 @@ Synced from
   - [ ] Use pre-approved templates for academic-term results.
   - **Progress:** Implementation is on plugin branch
     `feature/v3.6.0-result-dispatch`. Follow-up fixes for recipient consent,
-    approved-template-only WhatsApp delivery, and template parameters are
-    implemented. Re-review found remaining SMS destination/consent matching
-    and admin token-rendering issues; fixes and another review are pending.
-    No live provider delivery has been attempted.
+    approved-template-only WhatsApp delivery, provider-destination matching,
+    secret handling, and model/view separation are implemented. Final
+    reviewer verification passed. Live provider delivery has not been
+    attempted and remains outstanding.
 - [ ] **Bulk student photo ZIP uploader**
   - [ ] Accept a ZIP of `{roll_no}.jpg` photos and attach them to student records.
 - [ ] **Bilingual report cards (Tibetan and English)**

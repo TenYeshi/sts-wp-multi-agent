@@ -10,23 +10,20 @@ This workspace supports development for **STS Kollegal School**, served at
 - PHP CLI: `C:\xampp\php\php.exe`
 - Run PHP syntax checks with `C:\xampp\php\php.exe -l <file.php>`.
 
-## Existing installations (inspected before setup)
+## Plugin and theme workspace roots
 
 - Plugin: `plugins/sts-school-manager-3.5.1/` — **STS School Manager**, version
   3.5.1.
 - Theme: `themes/sts-kollegal/` — **STS Kollegal**, version 1.0.0.
 
-These are existing installations, not the new custom development targets.
-Leave them unchanged unless specifically requested.
+The [sts-school.code-workspace](./sts-school.code-workspace) opens these
+alongside the orchestrator root (`.`). The plugin and theme agents work only
+in their respective folders. Their files remain ignored by the orchestrator
+repository so the plugin and theme can be versioned independently. No nested
+`.git` repositories are currently present in those folders.
 
-## Custom development
-
-- Custom plugin: `plugins/sts-custom-plugin/`
-- Custom theme: `themes/sts-custom-theme/`
-- Agent instructions: `.github/agents/`
-
-Git ignores all of `wp-content` by default, then allows only the workspace
-documents, `.github/**`, and the two custom code paths. Existing third-party
-code, uploads, and other local content remain untracked.
+Agent instructions are in `.github/agents/`. The orchestrator repository
+allowlist includes this workspace file, documentation, and `.github/**`;
+`plugins/*`, `themes/*`, uploads, and other local content remain ignored.
 
 Follow `AGENTS.md` for coding rules and `REFERENCE.md` for paths and commands.

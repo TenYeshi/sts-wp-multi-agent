@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "Agent Orchestrator",
+      "path": "."
+    },
+    {
+      "name": "STS School Manager (Plugin)",
+      "path": "plugins/sts-school-manager-3.5.1"
+    },
+    {
+      "name": "STS Kollegal (Theme)",
+      "path": "themes/sts-kollegal"
+    }
+  ]
+}

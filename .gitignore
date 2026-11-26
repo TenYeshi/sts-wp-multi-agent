@@ -6,9 +6,8 @@
 !/README.md
 !/Todo.md
 !/REFERENCE.md
-!/plugins/
-!/plugins/sts-custom-plugin/
-!/plugins/sts-custom-plugin/**
-!/themes/
-!/themes/sts-custom-theme/
-!/themes/sts-custom-theme/**
+!/sts-school.code-workspace
+
+# Plugin and theme trees are kept outside the orchestrator repository.
+/plugins/*
+/themes/*

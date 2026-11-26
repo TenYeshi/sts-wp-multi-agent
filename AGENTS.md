@@ -5,13 +5,14 @@ This workspace is `C:\xampp\htdocs\school\wp-content`, for the local site at
 
 ## Managed code boundaries
 
-- The custom plugin agent owns only `plugins/sts-custom-plugin/`.
-- The custom theme agent owns only `themes/sts-custom-theme/`.
-- Do not modify the existing `plugins/sts-school-manager-3.5.1/` plugin or
-  `themes/sts-kollegal/` theme unless explicitly asked.
+- The plugin agent works only in `plugins/sts-school-manager-3.5.1/`.
+- The theme agent works only in `themes/sts-kollegal/`.
+- The reviewer checks changes in those two paths and lints modified PHP files.
+- Keep plugin and theme changes and Git operations within their respective
+  directories. Do not stage their files in the orchestrator repository.
 - Other installed plugins, themes, `uploads/`, and generated/local WordPress
-  files are intentionally ignored by Git. Never add them to tracking without
-  explicit direction.
+  files are intentionally ignored by the orchestrator Git repository. Never
+  add them to its tracking without explicit direction.
 
 ## PHP and WordPress standards
 

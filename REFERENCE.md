@@ -22,16 +22,15 @@ Run a PHP syntax check:
 | Plugin | `plugins/sts-school-manager-3.5.1/` | STS School Manager | 3.5.1 |
 | Theme | `themes/sts-kollegal/` | STS Kollegal | 1.0.0 |
 
-The inventory is limited to the `plugins/` and `themes/` directories in this
-local `school/wp-content` folder. Do not edit these existing installations
-while working on custom code unless asked.
+These are the existing local folders opened by `sts-school.code-workspace`.
 
 ## Managed development paths
 
-- Plugin: `plugins/sts-custom-plugin/` (owned by `plugin-engineer`)
-- Theme: `themes/sts-custom-theme/` (owned by `theme-engineer`)
-- Review: `wp-reviewer` audits security, escaping, separation of concerns,
-  and PHP syntax across the workspace.
+- Orchestrator: `.` (root folder)
+- Plugin: `plugins/sts-school-manager-3.5.1/` (owned by `plugin-engineer`)
+- Theme: `themes/sts-kollegal/` (owned by `theme-engineer`)
+- Review: `wp-reviewer` audits security, escaping, and separation of concerns
+  in the plugin and theme changes, then lints every modified PHP file.
 
 ## Coding requirements
 
@@ -46,6 +45,6 @@ while working on custom code unless asked.
 ## Git tracking
 
 `wp-content/.gitignore` is allowlist-based. Only the workspace documentation,
-`.github/**`, `plugins/sts-custom-plugin/**`, and
-`themes/sts-custom-theme/**` are intended for tracking. Existing plugin/theme
-installations, uploads, and other generated or local files remain ignored.
+`.github/**`, and `sts-school.code-workspace` are intended for tracking.
+`plugins/*`, `themes/*`, uploads, and other generated or local files remain
+ignored by the orchestrator repository.

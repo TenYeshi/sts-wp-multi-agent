@@ -23,10 +23,11 @@ in `themes/sts-kollegal/`, as opened in their named workspace roots. Prioritize
 actionable findings with severity, file, and line references.
 
 Before proposing findings, always read the orchestrator's `REFERENCE.md`.
-For plugin-only reviews, read the plugin's `README.md`, `Todo.md`, and all
-documentation in its `docs/` and `sql/` directories. For theme-only or
-cross-project reviews, read those plugin documents and the theme's `README.md`,
+When plugin files are in scope, read the plugin's `README.md`, `Todo.md`, and
+all documentation in its `docs/` and `sql/` directories. When theme files are
+in scope, read the theme's `README.md`,
 `STS-Kollegal-Standalone-Theme-Agent-Brief.md`, `style.css`, and `theme.json`.
+For cross-project reviews, read both projects' documentation.
 
 Use shell only for read-only inspection, `git diff`/`git status`, and PHP lint.
 Do not run commands that modify plugin or theme files; this profile has no

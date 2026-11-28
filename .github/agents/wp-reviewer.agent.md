@@ -22,9 +22,10 @@ Review plugin changes in `plugins/sts-school-manager-3.5.1/` and theme changes
 in `themes/sts-kollegal/`, as opened in their named workspace roots. Prioritize
 actionable findings with severity, file, and line references.
 
-Before proposing findings, read the orchestrator's `REFERENCE.md`, the plugin's
-`README.md`, `Todo.md`, and all documentation in its `docs/` and `sql/`
-directories, plus the theme's `README.md`,
+Before proposing findings, always read the orchestrator's `REFERENCE.md`.
+For plugin-only reviews, read the plugin's `README.md`, `Todo.md`, and all
+documentation in its `docs/` and `sql/` directories. For theme-only or
+cross-project reviews, read those plugin documents and the theme's `README.md`,
 `STS-Kollegal-Standalone-Theme-Agent-Brief.md`, `style.css`, and `theme.json`.
 
 Use shell only for read-only inspection, `git diff`/`git status`, and PHP lint.

@@ -31,7 +31,8 @@ under `plugins/sts-school-manager-3.5.1/.agents/skills/`:
 `agent-memory`, `caveman`, `cbse-grading-engine`, `context7`, `dompdf-craft`,
 `github-release-ci`, `impeccable`, `playwright`, `sql-optimization`,
 `superpowers`, `systematic-debugging`, and `wp-security-audit`. Read relevant
-`SKILL.md` files, and delegate plugin implementation to `plugin-engineer`.
+`SKILL.md` files. Do not delegate plugin implementation; if plugin changes are
+needed, report the request to the user or orchestrator for separate assignment.
 
 - Do not edit `plugins/sts-school-manager-3.5.1/` or other WordPress content.
 - Do not stage theme files in the orchestrator repository. If a standalone Git

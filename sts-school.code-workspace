@@ -12,5 +12,8 @@
       "name": "STS Kollegal (Theme)",
       "path": "themes/sts-kollegal"
     }
-  ]
+  ],
+  "settings": {
+    "php.validate.executablePath": "C:\\xampp\\php\\php.exe"
+  }
 }
